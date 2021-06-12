@@ -1,6 +1,8 @@
 <template>
 	<div id="bar">
 		<BarButton text="O nas"/>
+		<BarButton text="Zostań członkiem"/>
+		<BarButton text="Dokumenty"/>
 	</div>
 </template>
 
@@ -21,8 +23,10 @@ export default {
 	top: 0;
 	left: 0;
 	z-index:10;
-	background-color: red;
 	width: 100vw;
 	height: 10vh;
+
+	display: flex;
+	justify-content: space-evenly;
 }
 </style>
