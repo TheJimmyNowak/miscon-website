@@ -1,8 +1,8 @@
 <template>
 	<div id="bar">
-		<BarButton text="O nas"/>
-		<BarButton text="Zostań członkiem"/>
-		<BarButton text="Dokumenty"/>
+		<BarButton text="O nas" endpoint="about"/>
+		<BarButton text="Zostań członkiem" endpoint="membership"/>
+		<BarButton text="Dokumenty" endpoint="documents"/>
 	</div>
 </template>
 
