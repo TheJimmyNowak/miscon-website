@@ -1,6 +1,8 @@
 <template>
-	<Bar/>
-	<router-view/>
+  <div id="app">
+    <Bar/>
+    <router-view/>
+  </div>
 </template>
 
 <script>
@@ -16,11 +18,13 @@ export default {
 
 <style>
 #app {
+  width: auto;
+  height: 100vh;
   display: block;
 }
 
 body {
   margin: 0px;
-  background: #333333ff;
+  background-image: url("assets/background.png");
 }
 </style>
