@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <div id="container">
+    <TextContainer>
       <h1>Czym jest Miścon?</h1>
       <p>
         ghdfahfbhsdafjdahfjsjkf jshjdhajhfdjh jfadhjfhjsdfh jhsadjfhjh jafsdhjfn
@@ -16,27 +16,18 @@
         hafg;juhsdg;ahgj h
         gajshgfsahgsf
       </p>
-    </div>
+    </TextContainer>
   </div>
 </template>
 
 <script>
+import TextContainer from "@/components/TextContainer";
+
 export default {
-  name: "About"
+  name: "About",
+  components: { TextContainer }
 }
 </script>
 
 <style scoped>
-#about {
-  margin-top: 6vh;
-  color: #E6E6E6FF;
-  width: 99vw;
-  display: flex;
-  justify-content: center;
-}
-#container {
-  width: 75vw;
-}
-h1 {
-}
 </style>

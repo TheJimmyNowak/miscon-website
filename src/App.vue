@@ -27,4 +27,8 @@ body {
   margin: 0px;
   background-image: url("assets/background.png");
 }
+
+h1 {
+  text-align: center;
+}
 </style>
