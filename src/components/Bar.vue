@@ -1,8 +1,8 @@
 <template>
 	<div id="bar">
-		<BarButton text="O nas"/>
-		<BarButton text="Zostań członkiem"/>
-		<BarButton text="Dokumenty"/>
+		<BarButton text="O nas" endpoint="about"/>
+		<BarButton text="Zostań członkiem" endpoint="membership"/>
+		<BarButton text="Dokumenty" endpoint="documents"/>
 	</div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
 	top: 0;
 	left: 0;
 	z-index:10;
-	width: 100vw;
+	width: 99vw;
 	display: flex;
 	flex-wrap: wrap;
 }
