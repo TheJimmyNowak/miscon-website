@@ -1,29 +1,20 @@
 <template>
-	<Bar/>
-	<Home/>
+	<div class="home">
+	</div>
 </template>
 
 <script>
-import Home from './components/Home.vue';
-import Bar from './components/Bar.vue';
-
 export default {
-	name: 'App',
-	components: {
-		Home,
-		Bar
-	}
+  name: 'Home',
 }
 </script>
 
-<style>
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	width: auto;
-	height: 100vh;
-	display: block;
-}
-body {
-	margin: 0px;
+<style scoped>
+.home {
+	min-height: 100% !important;
+	background-image: url("../assets/online.jpg");
+
+	color: #e6e6e6ff;
+	background-position:center;
 }
 </style>
