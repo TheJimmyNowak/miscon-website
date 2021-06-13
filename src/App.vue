@@ -1,30 +1,29 @@
 <template>
-  <div id="app">
-    <Bar/>
-    <router-view/>
-  </div>
+	<Bar/>
+	<Home/>
 </template>
 
 <script>
+import Home from './components/Home.vue';
 import Bar from './components/Bar.vue';
 
 export default {
-  name: 'App',
-  components: {
-    Bar
-  }
+	name: 'App',
+	components: {
+		Home,
+		Bar
+	}
 }
 </script>
 
 <style>
 #app {
-  width: auto;
-  height: 100vh;
-  display: block;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	width: auto;
+	height: 100vh;
+	display: block;
 }
-
 body {
-  margin: 0px;
-  background-image: url("assets/background.png");
+	margin: 0px;
 }
 </style>
