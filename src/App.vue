@@ -16,12 +16,11 @@ export default {
 
 <style>
 #app {
-  width: auto;
-  height: 100vh;
   display: block;
 }
 
 body {
   margin: 0px;
+  background: #333333ff;
 }
 </style>
