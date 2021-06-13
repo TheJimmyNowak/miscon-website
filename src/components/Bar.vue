@@ -24,8 +24,7 @@ export default {
 	left: 0;
 	z-index:10;
 	width: 100vw;
-	height: 5vh;
 	display: flex;
-	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 </style>

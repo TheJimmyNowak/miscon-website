@@ -13,18 +13,15 @@ export default {
 
 <style scoped>
 .barButton {
-	height: 100%;
 	float: left;
 	padding: 10px;
 	color: #e6e6e6ff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-grow: 1;
 }
 .barButton:hover {
-	transform: scale(1.1);
-	transition-duration: 1s;
-	background-color: #FFF;
 	cursor: pointer;
 	
 	background-image:none !important; 
