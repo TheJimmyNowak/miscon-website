@@ -17,10 +17,12 @@ export default {
 .text-container {
   margin-top: 6vh;
   color: #E6E6E6FF;
-  width: 99vw;
+  width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .text-block {
   width: 75vw;
   text-align: justify;

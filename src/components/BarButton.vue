@@ -13,6 +13,7 @@ export default {
 
 <style scoped>
 .barButton {
+  font-size: 25px;
   float: left;
   padding: 10px;
   color: #e6e6e6ff;
@@ -25,31 +26,6 @@ export default {
 
 .barButton:hover {
   cursor: pointer;
-  -o-animation: fadeIt 1s ease-in-out;
-  animation: fadeIt 1s ease-in-out;
-}
-
-@-o-keyframes fadeIt {
-  0% {
-    background-color: #AAAAAA;
-  }
-  50% {
-    background-color: #EEEEEE;
-  }
-  100% {
-    background-color: #FFFFFF;
-  }
-}
-
-@keyframes fadeIt {
-  0% {
-    background-color: #AAAAAA;
-  }
-  50% {
-    background-color: #EEEEEE;
-  }
-  100% {
-    background-color: #FFFFFF;
-  }
+  background-color: #ff55dbff;
 }
 </style>
