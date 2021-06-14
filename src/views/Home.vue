@@ -27,6 +27,7 @@ img {
   margin-left: -500px;
   margin-top: -150px;
 }
+
 @media screen and (max-width: 1000px) {
   img {
     position: absolute;
@@ -39,6 +40,7 @@ img {
     margin-top: -50px;
   }
 }
+
 @keyframes animateLogo {
   0% {
     left: -100vw;

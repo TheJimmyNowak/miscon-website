@@ -17,7 +17,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Grenze');
 #app {
+  font-family: 'Grenze';
   width: auto;
   height: 100vh;
   display: block;
