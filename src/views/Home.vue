@@ -1,12 +1,16 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png"/>
+    <img src="../assets/logo.png" alt="Logo"/>
+    <SocialMediaBar/>
   </div>
 </template>
 
 <script>
+import SocialMediaBar from "@/components/SocialMediaBar";
+
 export default {
   name: 'Home',
+  components: {SocialMediaBar},
 }
 </script>
 
@@ -19,28 +23,16 @@ export default {
 
 img {
   position: absolute;
-  width: 60vw;
-  -o-animation: animateLogo 1s;
-  animation: animateLogo 1s;
+  width: 55vw;
   top: 50%;
   left: 50%;
   margin-left: -30vw;
   margin-top: -10vh;
+
+  -o-animation: animateLogo 1s;
+  animation: animateLogo 1s;
 }
-/*
-@media screen and (max-width: 1000px) {
-  img {
-    position: absolute;
-    width: 300px;
-    -o-animation: animateLogo 1s;
-    animation: animateLogo 1s;
-    top: 50%;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: -50px;
-  }
-}
-*/
+
 @keyframes animateLogo {
   0% {
     left: -100vw;
