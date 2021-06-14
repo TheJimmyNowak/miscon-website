@@ -19,15 +19,15 @@ export default {
 
 img {
   position: absolute;
-  width: 1000px;
+  width: 60vw;
   -o-animation: animateLogo 1s;
   animation: animateLogo 1s;
   top: 50%;
   left: 50%;
-  margin-left: -500px;
-  margin-top: -150px;
+  margin-left: -30vw;
+  margin-top: -10vh;
 }
-
+/*
 @media screen and (max-width: 1000px) {
   img {
     position: absolute;
@@ -40,7 +40,7 @@ img {
     margin-top: -50px;
   }
 }
-
+*/
 @keyframes animateLogo {
   0% {
     left: -100vw;
