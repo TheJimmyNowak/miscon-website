@@ -1,12 +1,12 @@
 <template>
   <div class="social-media-bar">
-    <div>
-      <a href="https://fb.com/przemysl.konwent">
+    <div id="facebook">
+      <a href="https://fb.com/przemysl.konwent" target="_blank">
         <img src="../assets/facebook.svg" alt="fb"/>
       </a>
     </div>
-    <div>
-      <a href="https://www.instagram.com/miscon.przemysl/">
+    <div id="instagram">
+      <a href="https://www.instagram.com/miscon.przemysl/" target="_blank">
         <img src="../assets/instagram.svg" alt="Instagram"/>
       </a>
     </div>
@@ -28,7 +28,7 @@ export default {
 }
 
 img {
-  width: 5vw;
+  width: 4vw;
   padding: 10px;
 }
 
