@@ -1,7 +1,9 @@
 <template>
   <div id="bar">
+    <BarButton text="Główna" endpoint="/"/>
     <BarButton text="O nas" endpoint="about"/>
-    <BarButton text="Zostań członkiem" endpoint="membership"/>
+    <BarButton text="Kontakt" endpoint="contact"/>
+    <BarButton text="Nasi partnerzy" endpoint="partners"/>
     <BarButton text="Dokumenty" endpoint="documents"/>
   </div>
 </template>

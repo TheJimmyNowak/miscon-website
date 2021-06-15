@@ -26,6 +26,6 @@ export default {
 
 .barButton:hover {
   cursor: pointer;
-  background-color: #ff55dbff;
+  background-color: rgb(153, 75, 25);
 }
 </style>
