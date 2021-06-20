@@ -1,30 +1,31 @@
 <template>
-  <router-link class="barButton" v-bind:to="endpoint">
+  <router-link class="mobileBarButton" v-bind:to="endpoint">
     <b>{{ text }}</b>
   </router-link>
 </template>
 
 <script>
 export default {
-  name: 'BarButton',
+  name: 'MobileBarButton',
   props: ['text', 'endpoint'],
 }
 </script>
 
 <style scoped>
-.barButton {
+.mobileBarButton {
   font-size: 25px;
   float: left;
-  padding: 10px;
   color: #e6e6e6ff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
   text-decoration: none;
+  margin: 10px 0 10px;
+  width: 100vw;
 }
 
-.barButton:hover {
+.mobileBarButton:hover {
   cursor: pointer;
   background-color: rgb(153, 75, 25);
 }

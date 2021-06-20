@@ -1,23 +1,37 @@
 <template>
-  <div id="app">
-    <Bar/>
+  <div v-if="screenWidth() > 768" id="app">
+    <ComputerBar/>
+    <router-view/>
+  </div>
+  <div v-else>
+    <MobileBar/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Bar from './components/Bar.vue';
+import ComputerBar from './components/ComputerBar.vue';
+import MobileBar from "@/components/MobileBar";
 
 export default {
   name: 'App',
   components: {
-    Bar
+    MobileBar,
+    ComputerBar
+  },
+  data: function () {
+    return {
+      screenWidth() {
+        return window.innerWidth;
+      }
+    };
   }
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Grenze');
+
 #app {
   font-family: 'Grenze', sans-serif;
   width: auto;
@@ -29,9 +43,11 @@ body {
   margin: 0px;
   background-image: url("assets/background.png");
 }
+
 p {
   font-size: 25px;
 }
+
 h1 {
   font-size: 40px;
   text-align: center;
