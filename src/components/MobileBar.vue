@@ -1,17 +1,17 @@
 <template>
   <div id="mobile-bar">
-    <div @click="toggleMenu" id="icon">
-      <div class="icon"/>
-      <div class="icon"/>
-      <div class="icon"/>
+    <div @click="toggleMenu" id="icon-container">
+      <div class="icon-part"/>
+      <div class="icon-part"/>
+      <div class="icon-part"/>
     </div>
   </div>
   <transition name="rollDownMenu">
     <div v-if="isMenuOpen" id="menu-list">
-      <MobileBarButton @click="toggleMenu" text="Główna" endpoint="/"/>
-      <MobileBarButton @click="toggleMenu" text="O nas" endpoint="about"/>
-      <MobileBarButton @click="toggleMenu" text="Kontakt" endpoint="contact"/>
-      <MobileBarButton @click="toggleMenu" text="Nasi partnerzy" endpoint="partners"/>
+      <MobileBarButton @click="buttonClicked" text="Główna" endpoint="/"/>
+      <MobileBarButton @click="buttonClicked" text="O nas" endpoint="about"/>
+      <MobileBarButton @click="buttonClicked" text="Kontakt" endpoint="contact"/>
+      <MobileBarButton @click="buttonClicked" text="Nasi partnerzy" endpoint="partners"/>
     </div>
   </transition>
 </template>
@@ -28,46 +28,45 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+    },
+    buttonClicked() {
+      this.toggleMenu();
+
     }
   }
 }
 </script>
 
 <style scoped>
-.icon {
+.icon-part {
   width: 35px;
   height: 5px;
-  background-color: rgba(230, 230, 230, 0.75);
+  background-color: rgb(230, 230, 230);
   margin: 6px 0;
   border-radius: 10px;
 }
 
-#icon {
-  margin-top: 2vh;
-}
-
-#icon:hover {
+#icon-container:hover {
   cursor: pointer;
 }
 
 #mobile-bar {
   position: absolute;
-  top: 0;
-  left: 85vw;
+  right: 0;
+  padding: 3vw 3vw 5vw 5vw;
   z-index: 10;
-  width: 10vw;
-  max-width: 10%;
-  height: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: rgb(190, 99, 35);
+  border-radius: 0 0 0 10vw;
 }
 
 #menu-list {
   padding-top: 50px;
   padding-bottom: 10px;
   position: absolute;
-  background-color: rgba(255, 127, 42, 0.75);
+  background-color: rgb(190, 99, 35);
   width: 100vw;
   max-width: 100%;
   z-index: 9;

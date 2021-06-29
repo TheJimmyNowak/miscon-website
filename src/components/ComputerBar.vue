@@ -29,6 +29,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  background-color: rgba(255, 127, 42, 0.75);
+  background-color: rgb(190, 99, 35);
 }
 </style>
