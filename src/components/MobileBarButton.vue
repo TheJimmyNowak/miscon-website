@@ -23,6 +23,7 @@ export default {
   text-decoration: none;
   margin: 10px 0 10px;
   width: 100vw;
+  max-width: 100%;
 }
 
 .mobileBarButton:hover {

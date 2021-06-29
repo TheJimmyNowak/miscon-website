@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .text-container {
-  margin-top: 6vh;
+  padding-top: 6vh;
   color: #E6E6E6FF;
   width: 100vw;
   max-width: 100%;

@@ -43,7 +43,7 @@ export default {
 }
 
 #icon {
-  margin-top: 5px;
+  margin-top: 2vh;
 }
 
 #icon:hover {
@@ -53,9 +53,10 @@ export default {
 #mobile-bar {
   position: absolute;
   top: 0;
-  left: 90vw;
+  left: 85vw;
   z-index: 10;
   width: 10vw;
+  max-width: 10%;
   height: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +84,7 @@ export default {
 
 @keyframes rollDownMenu {
   0% {
+    z-index: 9;
     transform: scaleY(0) scaleX(0);
   }
   100% {
