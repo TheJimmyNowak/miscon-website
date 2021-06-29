@@ -11,8 +11,6 @@
       <MobileBarButton @click="toggleMenu" text="Główna" endpoint="/"/>
       <MobileBarButton @click="toggleMenu" text="O nas" endpoint="about"/>
       <MobileBarButton @click="toggleMenu" text="Kontakt" endpoint="contact"/>
-      <MobileBarButton @click="toggleMenu" text="Naszecele i działania" endpoint="contact"/>
-      <MobileBarButton @click="toggleMenu" text="" endpoint="contact"/>
       <MobileBarButton @click="toggleMenu" text="Nasi partnerzy" endpoint="partners"/>
     </div>
   </transition>
