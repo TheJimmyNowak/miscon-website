@@ -2,11 +2,12 @@
   <div>
     <div v-if="screenWidth() > 768" id="app">
       <ComputerBar/>
+      <router-view/>
     </div>
     <div v-else>
       <MobileBar/>
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
