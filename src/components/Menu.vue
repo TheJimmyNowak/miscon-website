@@ -8,31 +8,44 @@
   </div>
   <transition name="rollDownMenu">
     <div v-if="isMenuOpen" id="menu-list">
-      <MobileBarButton @click="buttonClicked" text="Główna" endpoint="/"/>
-      <MobileBarButton @click="buttonClicked" text="O nas" endpoint="about"/>
-      <MobileBarButton @click="buttonClicked" text="Kontakt" endpoint="contact"/>
-      <MobileBarButton @click="buttonClicked" text="Nasi partnerzy" endpoint="partners"/>
+      <MenuButton v-for="button in menuButtons" :key="button.id" @click="toggleMenu" v-bind:text="button.text"
+                  v-bind:endpoint="button.endpoint"/>
     </div>
   </transition>
 </template>
 
 <script>
-import MobileBarButton from "@/components/MobileBarButton";
+import MenuButton from "@/components/MenuButton";
 
 export default {
-  name: "MobileBar",
-  components: {MobileBarButton},
+  name: "Menu",
+  components: {MenuButton},
   data: function () {
-    return {isMenuOpen: false}
+    return {
+      isMenuOpen: false,
+      menuButtons: [
+        {
+          id: 1,
+          text: "Główna",
+          endpoint: "/"
+        },
+        {
+          id: 2,
+          text: "O nas",
+          endpoint: "about"
+        },
+        {
+          id: 3,
+          text: "Kontakt",
+          endpoint: "contact"
+        }
+      ]
+    }
   },
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
-    buttonClicked() {
-      this.toggleMenu();
-
-    }
   }
 }
 </script>
@@ -46,20 +59,49 @@ export default {
   border-radius: 10px;
 }
 
+#icon-container {
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+  z-index: 10;
+}
+
 #icon-container:hover {
   cursor: pointer;
+  transform: scale(1.1) rotate(10deg);
 }
 
 #mobile-bar {
   position: absolute;
   right: 0;
-  padding: 3vw 3vw 5vw 5vw;
-  z-index: 10;
+  padding: 1vw 1vw 5vw 5vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(190, 99, 35);
   border-radius: 0 0 0 10vw;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #mobile-bar {
+    padding: 2vw 2vw 6vw 6vw;
+    border-radius: 0 0 0 16vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-bar {
+    padding: 5vw 5vw 8vw 8vw;
+    border-radius: 0 0 0 20vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #mobile-bar {
+    padding: 10vw 10vw 10vw 10vw;
+    border-radius: 0 0 0 20vw;
+  }
 }
 
 #menu-list {
@@ -73,6 +115,7 @@ export default {
   transform-origin: top right;
 }
 
+/* Animations */
 .rollDownMenu-enter-active {
   animation: rollDownMenu 300ms;
 }

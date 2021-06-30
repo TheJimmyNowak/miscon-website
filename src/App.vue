@@ -1,33 +1,18 @@
 <template>
   <div>
-    <div v-if="screenWidth() > 768" id="app">
-      <ComputerBar/>
+      <Menu/>
       <router-view/>
-    </div>
-    <div v-else>
-      <MobileBar/>
-      <router-view/>
-    </div>
   </div>
 </template>
 
 <script>
-import ComputerBar from './components/ComputerBar.vue';
-import MobileBar from "@/components/MobileBar";
+import Menu from "@/components/Menu";
 
 export default {
   name: 'App',
   components: {
-    MobileBar,
-    ComputerBar
+    Menu
   },
-  data: function () {
-    return {
-      screenWidth() {
-        return window.innerWidth;
-      }
-    };
-  }
 }
 </script>
 

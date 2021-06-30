@@ -1,18 +1,18 @@
 <template>
-  <router-link class="mobileBarButton" v-bind:to="endpoint">
+  <router-link class="menuButton" v-bind:to="endpoint">
     <b>{{ text }}</b>
   </router-link>
 </template>
 
 <script>
 export default {
-  name: 'MobileBarButton',
+  name: 'MenuButton',
   props: ['text', 'endpoint'],
 }
 </script>
 
 <style scoped>
-.mobileBarButton {
+.menuButton {
   font-size: 25px;
   float: left;
   color: #e6e6e6ff;
@@ -26,7 +26,7 @@ export default {
   max-width: 100%;
 }
 
-.mobileBarButton:hover {
+.menuButton:hover {
   cursor: pointer;
   background-color: rgb(153, 75, 25);
 }
