@@ -1,6 +1,6 @@
 <template>
   <div id="mobile-bar">
-    <div @click="toggleMenu" id="icon-container">
+    <div @click="toggleMenu" id="icon-container" ref="menuIcon">
       <div class="icon-part"/>
       <div class="icon-part"/>
       <div class="icon-part"/>
@@ -45,6 +45,10 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+      if(this.isMenuOpen)
+        this.$refs.menuIcon.style.transform = `rotate(20deg)`
+      else
+        this.$refs.menuIcon.style.transform = `rotate(0deg)`
     },
   }
 }
@@ -68,7 +72,6 @@ export default {
 
 #icon-container:hover {
   cursor: pointer;
-  transform: scale(1.1) rotate(10deg);
 }
 
 #mobile-bar {
