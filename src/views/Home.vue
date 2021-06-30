@@ -31,7 +31,13 @@ img {
   -o-animation: animateLogo 1s;
   animation: animateLogo 1s;
 }
-
+@media screen and (max-width: 768px) {
+  img {
+    width: 70vw;
+    top: 55%;
+    left: 45%;
+  }
+}
 @keyframes animateLogo {
   0% {
     left: -100vw;
