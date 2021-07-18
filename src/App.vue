@@ -1,7 +1,7 @@
 <template>
   <div>
-      <Menu/>
-      <router-view/>
+    <Menu/>
+    <router-view/>
   </div>
 </template>
 
@@ -28,6 +28,7 @@ export default {
 
 body {
   margin: 0px;
+  background-color: #000f10;
   background-image: url("assets/background.png");
 }
 
