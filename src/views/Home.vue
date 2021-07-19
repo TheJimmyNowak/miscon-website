@@ -1,16 +1,18 @@
 <template>
   <div class="home">
     <img src="../assets/logo.png" alt="Logo"/>
+    <Copyright/>
     <SocialMediaBar/>
   </div>
 </template>
 
 <script>
 import SocialMediaBar from "@/components/SocialMediaBar";
+import Copyright from "@/components/Copyright";
 
 export default {
   name: 'Home',
-  components: {SocialMediaBar},
+  components: {Copyright, SocialMediaBar},
 }
 </script>
 
