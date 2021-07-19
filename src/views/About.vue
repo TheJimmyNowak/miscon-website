@@ -40,7 +40,10 @@ import TextContainer from "@/components/TextContainer";
 
 export default {
   name: "About",
-  components: {TextContainer}
+  components: {TextContainer},
+  created() {
+    document.title = "O nas"
+  }
 }
 </script>
 
