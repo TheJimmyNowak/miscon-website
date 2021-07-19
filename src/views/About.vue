@@ -11,12 +11,13 @@
         Naszym głównym celem jest zachęcenie naszych rówieśników do aktywności społecznej i przede wszystkim do
         dzielenia się swoimi wyjątkowymi i interesującymi pasjami.
         Dodatkowo chcemy rozwinąć patriotyzm lokalny poprzez wzbogacanie życia kulturowego naszego miasta poprzez
-        organizację różnorakich wydarzeń i spotkań o dowolnej tematyce.
+        organizację różnorakich wydarzeń i spotkań o dowolnej tematyce. Obecnie działamy na terenie miasta Przemyśl,
+        organizując spotkania planszówkowe.
       </p>
       <h1>Jak to było Konwentem “MIŚCON”?</h1>
       <p>
         Wszystko zaczęło się w Sierpniu 2019 roku, kiedy jako grupa dobrych znajomych chcieliśmy stworzyć kółko
-        planszówkowe w naszym liceum. W trakcie roku szkolnego nasz pomysł ewoluował w festiwal który postanowiliśmy
+        planszówkowe w II liceum w Przemyślu. W trakcie roku szkolnego nasz pomysł ewoluował w festiwal który postanowiliśmy
         zorganizować w ramach konkursu “Zwolnieni z Teorii”. Nasze prace trwały, aż do października, w tym miesiącu
         stworzyliśmy fanpage, w ramach szacowania ilości przyszłych uczestników naszej imprezy stworzyliśmy Ankietę na
         temat Popularności fantastyki wśród młodzieży, jej wyniki pomogły nam w trakcie późniejszych prac. Po pewnym

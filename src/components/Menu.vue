@@ -7,10 +7,10 @@
     </div>
   </div>
   <transition name="rollDownMenu">
-    <div v-if="isMenuOpen" id="menu-list">
+    <nav v-if="isMenuOpen" id="menu-list">
       <MenuButton v-for="button in menuButtons" :key="button.id" @click="toggleMenu" v-bind:text="button.text"
                   v-bind:endpoint="button.endpoint"/>
-    </div>
+    </nav>
   </transition>
 </template>
 
